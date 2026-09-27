@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-earth-50 text-stone-900 antialiased font-sans selection:bg-kisan-200 selection:text-kisan-900 min-h-screen;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Accessible touch targets & smooth animations */
+.touch-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+/* Custom friendly scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(67, 151, 93, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(67, 151, 93, 0.45);
+}
